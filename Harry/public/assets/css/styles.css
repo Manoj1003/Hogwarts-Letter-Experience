@@ -467,11 +467,12 @@ input {
   row-gap: 2.5rem;
   text-align: center;
 }
+
 .about__title {
   text-align: center !important;
 }
+
 .about__description {
-  /* margin-bottom: var(--mb-2); */
   text-align: center;
 }
 
@@ -480,30 +481,59 @@ input {
   column-gap: 1rem;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .about__img-overlay {
-  overflow: var(--img-hidden);
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .about__img-one {
   width: 130px;
+  max-width: 100%;
+  height: auto;
 }
 
 .about__img-two {
   width: 180px;
+  max-width: 100%;
+  height: auto;
 }
 
 .about__img-one,
 .about__img-two {
   transition: var(--img-transition);
   border-radius: 12px;
+  display: block;
 }
 
 .about__img-one:hover,
 .about__img-two:hover {
   transform: var(--img-scale);
   border-radius: 12px;
+}
+
+/*=============== MOBILE ===============*/
+@media screen and (max-width: 568px) {
+  .about__img {
+    column-gap: 0.6rem;
+    padding: 0 1rem;
+  }
+
+  .about__img-one {
+    width: 35vw;
+    max-width: 130px;
+  }
+
+  .about__img-two {
+    width: 48vw;
+    max-width: 180px;
+  }
+
+  .about__img-overlay {
+    max-width: 100%;
+  }
 }
 
 /*=============== DISCOVER ===============*/
