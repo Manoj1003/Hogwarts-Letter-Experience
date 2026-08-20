@@ -127,14 +127,51 @@
                     <a href="https://github.com/Akshatjalan" target="_blank" class="home__social-link">
                         <i class="ri-github-fill"></i>
                     </a> -->
-                </div>
-                    <div class="about__img">
-    <img 
-        src="assets/video/OIP-removebg-preview.png"
-        alt="Harry Potter"
-        class="about__img-one"
-    >
+             <style>
+  .about__img-one {
+    width: 170px;
+    max-width: 85vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+  }
+
+  .about__img-one:hover {
+    transform: scale(1.12);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+    filter: brightness(1.08);
+  }
+
+  @media screen and (max-width: 568px) {
+    .about__img-one {
+      width: 160px;
+      max-width: 75vw;
+    }
+
+    .about__img-one:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+      filter: brightness(1.05);
+    }
+
+    .about__img-one:active {
+      transform: scale(1.08);
+    }
+  }
+</style>
+
+<div class="home__social container">
+  <img
+    src="assets/video/OIP-removebg-preview.png"
+    alt="Harry Potter"
+    class="about__img-one"
+  >
 </div>
+                </div>
+
             </div>
         </section>
 
